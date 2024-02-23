@@ -74,3 +74,18 @@
   margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
   background: #14ab00 !important;
 }
+
+
+
+
+.img-thumbnail {
+  width: 163px;
+  height: 148px;
+  cursor: pointer;
+}
+@media (min-width: 640px) {
+  .img-thumbnail {
+      width: 182px;
+      height: 165px;
+  }
+}
