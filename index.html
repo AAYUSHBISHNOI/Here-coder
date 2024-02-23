@@ -2586,9 +2586,15 @@
         </div>
         <div class="lg:flex gap-[20px] mt-4 lg:mt-[52px]">
           <div class="w-full lg:w-[55%] xl:w-[60%]">
-            <video class="w-[343px] sm:w-[659px] h-[193px] sm:h-[370px] lg:h-[330px] 3xl:w-[659px] 3xl:h-[370px] object-contain" id="videoPlayer" autoplay controls>
-              <source id="videoSource" src="./assets/video/video-1.mp4" type="video/mp4">
-            </video>
+            <video poster="./assets/img/webp/meet-img-1.png" autoplay controls class="w-[343px] rounded-[4px] sm:w-[659px] h-[193px] sm:h-[370px] lg:h-[330px] 3xl:w-[659px] 3xl:h-[370px] object-contain" id="mainVideo" src="./assets/video/video-1.mp4"></video>
+            <div id="mainContent" class="mt-[15px]">
+              <p class="font-inter font-semibold text-1md sm:text-xmd text-[#131313] leading-[130%]">
+                Courtney Henry
+              </p>
+              <p class="text-xsm sm:text-sm text-[#131313] font-inter font-normal leading-[150%]">
+                Java Developer
+              </p>
+            </div>
             <!-- <img
               id="firstImage"
               
@@ -2596,16 +2602,6 @@
               alt="video-img"
             /> -->
             <div class="mt-[15px]">
-              <p
-                class="font-inter font-semibold text-1md sm:text-xmd text-[#131313] leading-[130%]"
-              >
-                Courtney Henry
-              </p>
-              <p
-                class="text-xsm sm:text-sm text-[#131313] font-inter font-normal leading-[150%]"
-              >
-                Java Developer
-              </p>
               <span>
                 <svg
                   class="mt-2"
@@ -3116,7 +3112,7 @@
             <div class="swiper-wrapper flex items-center">
               <div class="swiper-slide">
                   <div class="text-center w-[177px]">
-                    <video autoplay controls class="w-[163px] sm:w-[182px] h-[148px] cursor-pointer sm:h-[165px]" src="./assets/video/video-1.mp4" onclick="changeVideo('./assets/video/video-2.mp4')" alt="Change Video" style="cursor:pointer;"></video>
+                    <video poster="./assets/img/webp/meet-img-3.png" autoplay controls class="w-[163px] sm:w-[182px] h-[148px] cursor-pointer sm:h-[165px]" id="secondaryVideo" src="./assets/video/video-1.mp4" onclick="changeVideoAndContent('./assets/video/video-2.mp4', 'Ralph Edwards', 'Java Developer')" alt="Change Video" style="cursor:pointer;"></video>
                     <!-- <img
                       class=""
                       src="./assets/img/webp/meet-img-3.png"
@@ -3137,7 +3133,7 @@
               </div>
               <div class="swiper-slide">
                   <div class="text-center w-[177px]">
-                    <video autoplay controls class="w-[163px] sm:w-[182px] h-[148px] cursor-pointer sm:h-[165px]" src="./assets/video/video-2.mp4" onclick="changeVideo('./assets/video/video-1.mp4')" alt="Change Video" style="cursor:pointer;"></video>
+                    <video poster="./assets/img/webp/meet-img-4.png" autoplay controls class="w-[163px] sm:w-[182px] h-[148px] cursor-pointer sm:h-[165px]" id="secondaryVideo" src="./assets/video/video-1.mp4" onclick="changeVideoAndContent('./assets/video/video-2.mp4', 'Cody Fisher', 'Java Developer')" alt="Change Video" style="cursor:pointer;"></video>
                     <p
                       class="text-sm sm:text-2sm font-inter font-semibold leading-[130%] mt-3"
                     >
@@ -3152,7 +3148,7 @@
               </div>
               <div class="swiper-slide">
                   <div class="text-center w-[177px]">
-                    <video autoplay controls class="w-[163px] sm:w-[182px] h-[148px] cursor-pointer sm:h-[165px]" src="./assets/video/video-1.mp4" onclick="changeVideo('./assets/video/video-2.mp4')" alt="Change Video" style="cursor:pointer;"></video>
+                    <video poster="./assets/img/webp/meet-img-5.png" autoplay controls class="w-[163px] sm:w-[182px] h-[148px] cursor-pointer sm:h-[165px]" id="secondaryVideo" src="./assets/video/video-1.mp4" onclick="changeVideoAndContent('./assets/video/video-2.mp4', 'Arlene McCoy', 'Java Developer')" alt="Change Video" style="cursor:pointer;"></video>
                     <p
                       class="text-sm sm:text-2sm font-inter font-semibold leading-[130%] mt-3"
                     >
@@ -3167,7 +3163,7 @@
               </div>
               <div class="swiper-slide">
                   <div class="text-center w-[177px]">
-                    <video autoplay controls class="w-[163px] sm:w-[182px] h-[148px] cursor-pointer sm:h-[165px]" src="./assets/video/video-2.mp4" onclick="changeVideo('./assets/video/video-1.mp4')" alt="Change Video" style="cursor:pointer;"></video>
+                    <video poster="./assets/img/webp/meet-img-6.png" autoplay controls class="w-[163px] sm:w-[182px] h-[148px] cursor-pointer sm:h-[165px]" id="secondaryVideo" src="./assets/video/video-1.mp4" onclick="changeVideoAndContent('./assets/video/video-2.mp4', 'Esther Howard', 'Java Developer')" alt="Change Video" style="cursor:pointer;"></video>
                     <p
                       class="text-sm sm:text-2sm font-inter font-semibold leading-[130%] mt-3"
                     >
@@ -3182,7 +3178,7 @@
               </div>
               <div class="swiper-slide">
                   <div class="text-center w-[177px]">
-                    <video autoplay controls class="w-[163px] sm:w-[182px] h-[148px] cursor-pointer sm:h-[165px]" src="./assets/video/video-1.mp4" onclick="changeVideo('./assets/video/video-2.mp4')" alt="Change Video" style="cursor:pointer;"></video>
+                    <video poster="./assets/img/webp/meet-img-7.png" autoplay controls class="w-[163px] sm:w-[182px] h-[148px] cursor-pointer sm:h-[165px]" id="secondaryVideo" src="./assets/video/video-1.mp4" onclick="changeVideoAndContent('./assets/video/video-2.mp4', 'Ronald Richards', 'Java Developer')" alt="Change Video" style="cursor:pointer;"></video>
                     <p
                       class="text-sm sm:text-2sm font-inter font-semibold leading-[130%] mt-3"
                     >
@@ -3197,7 +3193,7 @@
               </div>
               <div class="swiper-slide">
                   <div class="text-center w-[177px]">
-                    <video autoplay controls class="w-[163px] sm:w-[182px] h-[148px] cursor-pointer sm:h-[165px]" src="./assets/video/video-2.mp4" onclick="changeVideo('./assets/video/video-1.mp4')" alt="Change Video" style="cursor:pointer;"></video>
+                    <video poster="./assets/img/webp/meet-img-8.png" autoplay controls class="w-[163px] sm:w-[182px] h-[148px] cursor-pointer sm:h-[165px]" id="secondaryVideo" src="./assets/video/video-1.mp4" onclick="changeVideoAndContent('./assets/video/video-2.mp4', 'Dianne Russell', 'Java Developer')" alt="Change Video" style="cursor:pointer;"></video>
                     <p
                       class="text-sm sm:text-2sm font-inter font-semibold leading-[130%] mt-3"
                     >
@@ -3212,7 +3208,7 @@
               </div>
               <div class="swiper-slide">
                   <div class="text-center w-[177px]">
-                    <video autoplay controls class="w-[163px] sm:w-[182px] h-[148px] cursor-pointer sm:h-[165px]" src="./assets/video/video-1.mp4" onclick="changeVideo('./assets/video/video-2.mp4')" alt="Change Video" style="cursor:pointer;"></video>
+                    <video poster="./assets/img/webp/meet-img-5.png" autoplay controls class="w-[163px] sm:w-[182px] h-[148px] cursor-pointer sm:h-[165px]" id="secondaryVideo" src="./assets/video/video-1.mp4" onclick="changeVideoAndContent('./assets/video/video-2.mp4', 'Arlene McCoy', 'Java Developer')" alt="Change Video" style="cursor:pointer;"></video>
                     <p
                       class="text-sm sm:text-2sm font-inter font-semibold leading-[130%] mt-3"
                     >
@@ -5290,23 +5286,24 @@
     
     
     <script>
-    function changeVideo(newVideoSrc) {
-      // Correctly access the <source> element by its ID "videoSource"
-      var videoSource = document.getElementById("videoSource");
-      videoSource.src = newVideoSrc; // Set the new video source here
-    
-      var videoPlayer = document.getElementById("videoPlayer");
-      videoPlayer.load(); // Reload the video element to apply the new source
-      videoPlayer.play(); // Optionally, play the video after changing the source
+     function changeVideoAndContent(newVideoSrc, newName, newRole) {
+      // Change the main video source
+      var mainVideoSource = document.getElementById("mainVideo");
+      mainVideoSource.src = newVideoSrc;
+      
+      var mainVideoPlayer = document.getElementById("mainVideo");
+      mainVideoPlayer.load();
+      mainVideoPlayer.play();
+  
+      // Change the main content
+      var mainContent = document.getElementById("mainContent");
+      var mainName = mainContent.querySelector("p:first-child");
+      var mainRole = mainContent.querySelector("p:last-child");
+  
+      mainName.textContent = newName;
+      mainRole.textContent = newRole;
     }
     </script>
-   
-
-
-
-
-
-
     <!-- Swiper-slider-script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Index.js-file-link -->
