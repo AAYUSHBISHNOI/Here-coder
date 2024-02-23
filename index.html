@@ -5282,28 +5282,6 @@
         </p>
       </div>
     </section>
-
-    
-    
-    <script>
-     function changeVideoAndContent(newVideoSrc, newName, newRole) {
-      // Change the main video source
-      var mainVideoSource = document.getElementById("mainVideo");
-      mainVideoSource.src = newVideoSrc;
-      
-      var mainVideoPlayer = document.getElementById("mainVideo");
-      mainVideoPlayer.load();
-      mainVideoPlayer.play();
-  
-      // Change the main content
-      var mainContent = document.getElementById("mainContent");
-      var mainName = mainContent.querySelector("p:first-child");
-      var mainRole = mainContent.querySelector("p:last-child");
-  
-      mainName.textContent = newName;
-      mainRole.textContent = newRole;
-    }
-    </script>
     <!-- Swiper-slider-script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Index.js-file-link -->

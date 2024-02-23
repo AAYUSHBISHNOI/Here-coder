@@ -235,3 +235,20 @@ function changeImage(newSrc) {
   firstImage.src = newSrc; // Set the new image source here
   firstImage.alt = "New Image"; // Set the new image alt text here
 }
+
+/***************Onclick-video-and-text-change*****************/
+function changeVideoAndContent(newVideoSrc, newName, newRole) {
+  var mainVideoSource = document.getElementById("mainVideo");
+  mainVideoSource.src = newVideoSrc;
+
+  var mainVideoPlayer = document.getElementById("mainVideo");
+  mainVideoPlayer.load();
+  mainVideoPlayer.play();
+
+  var mainContent = document.getElementById("mainContent");
+  var mainName = mainContent.querySelector("p:first-child");
+  var mainRole = mainContent.querySelector("p:last-child");
+
+  mainName.textContent = newName;
+  mainRole.textContent = newRole;
+}
